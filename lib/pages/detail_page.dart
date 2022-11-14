@@ -190,7 +190,41 @@ class DetailPage extends StatelessWidget {
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                  Image.asset('assets/image/value.png'),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.remove,
+                          size: 24.0,
+                        ),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 149, 230, 230),
+                          borderRadius: BorderRadius.circular(5.0),
+                        ),
+                        child: const Text(
+                          "10",
+                          style: TextStyle(
+                            fontSize: 22.0,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.add,
+                          size: 24.0,
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
               const SizedBox(
@@ -205,7 +239,29 @@ class DetailPage extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              Image.asset('assets/image/addtocart.png'),
+              Container(
+                alignment: Alignment.center,
+                height: 50,
+                width: MediaQuery.of(context).size.width,
+                // ignore: sort_child_properties_last
+                child: Text(
+                  "Add To Cart",
+                  style: GoogleFonts.poppins(
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                decoration: const BoxDecoration(
+                  color: Color(0xff979797),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10),
+                  ),
+                ),
+              )
             ],
           ),
         ),
