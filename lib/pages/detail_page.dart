@@ -129,7 +129,52 @@ class DetailPage extends StatelessWidget {
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                  Image.asset('assets/image/colordetail.png'),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Container(
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          color: const Color(0xff9A9390),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 5.0,
+                      ),
+                      Container(
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffEEA427),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 5.0,
+                      ),
+                      Container(
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffE3E3E3),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 5.0,
+                      ),
+                      Container(
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          color: const Color(0xff80450A),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
               const SizedBox(
