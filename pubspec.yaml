@@ -60,6 +60,11 @@ flutter:
     - assets/image/modern_table.png
     - assets/image/stylish_chair.png
     - assets/image/wooden_console.png
+    - assets/image/wooden_coff.png
+    - assets/image/colordetail.png
+    - assets/image/value.png
+    - assets/image/addtocart.png
+    - assets/icon/icon.png
     - assets/icon/ison_menu.png
     - assets/icon/bottomnav_cart.png
     - assets/icon/bottomnav_person.png
