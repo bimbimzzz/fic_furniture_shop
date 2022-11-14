@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_shop/app_style/app_color.dart';
-import 'package:furniture_shop/pages/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailPage extends StatelessWidget {
@@ -13,19 +12,6 @@ class DetailPage extends StatelessWidget {
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(387.0),
           child: AppBar(
-            leading: IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const HomePage()),
-                );
-              },
-              icon: const Icon(
-                Icons.arrow_back,
-                size: 24.0,
-                color: colorLima,
-              ),
-            ),
             flexibleSpace: Container(
               height: 467.0,
               width: MediaQuery.of(context).size.width,

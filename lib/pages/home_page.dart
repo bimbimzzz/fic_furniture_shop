@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_shop/app_style/app_color.dart';
+import 'package:furniture_shop/pages/detail_page.dart';
 import 'package:furniture_shop/pages/widget_app.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -147,35 +148,75 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
-                              WidgetApp(
-                                harga: '\$170',
-                                judul: 'Stylish Chair',
-                                gambar: AssetImage(
-                                    'assets/image/stylish_chair.png'),
+                            children: [
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const DetailPage()),
+                                  );
+                                },
+                                child: const WidgetApp(
+                                  harga: '\$170',
+                                  judul: 'Stylish Chair',
+                                  gambar: AssetImage(
+                                      'assets/image/stylish_chair.png'),
+                                ),
                               ),
-                              WidgetApp(
-                                harga: '\$75',
-                                judul: 'Modern Table',
-                                gambar:
-                                    AssetImage('assets/image/modern_table.png'),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const DetailPage()),
+                                  );
+                                },
+                                child: const WidgetApp(
+                                  harga: '\$75',
+                                  judul: 'Modern Table',
+                                  gambar: AssetImage(
+                                      'assets/image/modern_table.png'),
+                                ),
                               ),
                             ],
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
-                              WidgetApp(
-                                harga: '\$240',
-                                judul: 'Brown Armchair',
-                                gambar: AssetImage(
-                                    'assets/image/brown_armchair.png'),
+                            children: [
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const DetailPage()),
+                                  );
+                                },
+                                child: const WidgetApp(
+                                  harga: '\$240',
+                                  judul: 'Brown Armchair',
+                                  gambar: AssetImage(
+                                      'assets/image/brown_armchair.png'),
+                                ),
                               ),
-                              WidgetApp(
-                                harga: '\$210',
-                                judul: 'Wooden Console',
-                                gambar: AssetImage(
-                                    'assets/image/wooden_console.png'),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const DetailPage()),
+                                  );
+                                },
+                                child: const WidgetApp(
+                                  harga: '\$210',
+                                  judul: 'Wooden Console',
+                                  gambar: AssetImage(
+                                      'assets/image/wooden_console.png'),
+                                ),
                               ),
                             ],
                           ),
